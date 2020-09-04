@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ushio Github</title>
+	<script type="text/javascript">
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&#]*)/gi,
+			function(m,key,value) {
+				vars[key] = value;
+			}
+		);
+		if(new Date().getTimezoneOffset() == -480){
+			window.location.href="https://git.yimian.xyz/"+vars['proj'];
+		}else{
+			window.location.href="https://github.com/"+vars['proj'];
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>
